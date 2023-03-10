@@ -1,0 +1,2 @@
+# AffiliateAPI
+Parkway Affiliate API
