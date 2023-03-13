@@ -57,7 +57,7 @@ Displays account info
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
@@ -99,7 +99,7 @@ Fetches a list of properties that belong to the owners account
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
@@ -143,7 +143,7 @@ Fetches a properties details
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
@@ -197,7 +197,7 @@ Endpoint allows updating Property Spaces and/or the Daily Rate in one request.
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
@@ -239,7 +239,7 @@ Allows owner to update the Daily Rate
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
@@ -278,7 +278,7 @@ Allows owner to update the Max Available Spaces
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
@@ -315,7 +315,7 @@ Fetches a properties blackouts
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
@@ -399,7 +399,7 @@ Creates a blackout spanning the start_date and end_date fields. Date Format is "
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
@@ -440,7 +440,7 @@ Deletes a properties blackout date. Requires a blackout_id from Property Blackou
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXeu2N8Ns9MqenLfFze|string|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
 
 
 ### Response: 200
