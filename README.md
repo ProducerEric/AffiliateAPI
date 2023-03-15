@@ -634,6 +634,6 @@ Updates scheduled pricing spanning the start_date and end_date fields. Date Form
         "created": "2022-08-06T13:18:21.000000Z",
         "id": 5070
     },
-    "message": "Scheduled Pricing Created"
+    "message": "Scheduled Pricing Updated"
 }
 ```
