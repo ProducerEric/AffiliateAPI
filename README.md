@@ -57,7 +57,7 @@ Displays account info
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -99,7 +99,7 @@ Fetches a list of properties that belong to the owners account
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -138,7 +138,7 @@ Fetches a properties details
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -192,7 +192,7 @@ Endpoint allows updating Property Spaces and/or the Daily Rate in one request.
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -234,7 +234,7 @@ Allows owner to update the Daily Rate
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -273,7 +273,7 @@ Allows owner to update the Max Available Spaces
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -305,7 +305,7 @@ Fetches a properties blackouts
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -389,7 +389,7 @@ Creates a blackout spanning the start_date and end_date fields. Date Format is "
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -436,7 +436,7 @@ Updates a blackout spanning the start_date and end_date fields. Date Format is "
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -473,7 +473,7 @@ Deletes a properties blackout date. Requires a blackout_id from Property Blackou
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -503,7 +503,7 @@ Fetches a properties scheduled pricing
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 ### Response: 200
 ```json
@@ -566,7 +566,7 @@ Creates scheduled pricing spanning the start_date and end_date fields. Date Form
 
 |Param|value|Type|
 |---|---|---|
-|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+|token|1|{Your Token}|string|
 
 
 ### Response: 200
@@ -577,6 +577,57 @@ Creates scheduled pricing spanning the start_date and end_date fields. Date Form
         "property_id": 1,
         "description":null
         "daily_rate":"4.99",
+        "start_date": "2023-12-23 00:00:00",
+        "end_date": "2024-01-03 00:00:00",
+        "modified": "2022-08-06T13:18:21.000000Z",
+        "created": "2022-08-06T13:18:21.000000Z",
+        "id": 5070
+    },
+    "message": "Scheduled Pricing Created"
+}
+```
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Scheduled Pricing Edit
+Updates scheduled pricing spanning the start_date and end_date fields. Date Format is "YYYY-MM-DD HH:MM:SS"
+
+**property_id** - **Required** Property ID (int)
+**scheduled_id** - **Required** Scheduled Pricing ID (int)
+**daily_rate** -  **Required** Daily Rate (decimal)
+**start_date** - **Required** Start Date (datetime) "YYYY-MM-DD HH:MM:SS"  
+**end_date** - **Required** End Date (datetime) "YYYY-MM-DD HH:MM:SS"
+
+### Method: PUT
+>```
+>https://api.parkwayparking.com/endpoint/property/editscheduledpricing
+>```
+### Body (**raw**)
+
+```json
+{
+  "property_id":1,
+  "scheduled_id":5070,
+  "daily_rate":"5.99",
+  "start_date":"2023-12-23 00:00:00",
+  "end_date":"2024-01-03 00:00:00"
+}
+```
+
+### 🔑 Authentication bearer
+
+|Param|value|Type|
+|---|---|---|
+|token|1|{Your Token}|string|
+
+
+### Response: 200
+```json
+{
+  "success": true,
+    "data": {
+        "property_id": 1,
+        "description":null
+        "daily_rate":"5.99",
         "start_date": "2023-12-23 00:00:00",
         "end_date": "2024-01-03 00:00:00",
         "modified": "2022-08-06T13:18:21.000000Z",
