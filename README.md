@@ -508,8 +508,8 @@ Creates scheduled pricing spanning the start_date and end_date fields. Date Form
 ```json
 {
   "property_id":1,
-  "description":"Christmas Eve
-  "daily_rate":4.99,
+  "description":"Christmas Eve",
+  "daily_rate":"4.99",
   "start_date":"2023-12-23 00:00:00",
   "end_date":"2024-01-03 00:00:00"
 }
