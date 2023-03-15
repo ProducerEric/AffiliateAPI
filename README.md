@@ -408,6 +408,53 @@ Creates a blackout spanning the start_date and end_date fields. Date Format is "
 }
 ```
 
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Property Blackout Edit
+Updates a blackout spanning the start_date and end_date fields. Date Format is "YYYY-MM-DD HH:MM:SS"
+
+**property_id** - **Required** Property ID (int)
+**blackout_id** - **Required** Blackout ID (int)
+**start_date** - **Required** Start Date (datetime) "YYYY-MM-DD HH:MM:SS"  
+**end_date** - **Required** End Date (datetime) "YYYY-MM-DD HH:MM:SS"
+### Method: PUT
+>```
+>https://api.parkwayparking.com/endpoint/property/blackout/edit
+>```
+### Body (**raw**)
+
+```json
+{
+  "property_id":1,
+  "blackout_id":22,
+  "start_date":"2023-12-23 00:00:00",
+  "end_date":"2024-01-03 00:00:00"
+}
+```
+
+### 🔑 Authentication bearer
+
+|Param|value|Type|
+|---|---|---|
+|token|1|5OAdJD1OeGJKDPiyALElInXe5zz4233qenLfFze|string|
+
+
+### Response: 200
+```json
+{
+    "success": true,
+    "data": {
+        "property_id": 1,
+        "start_date": "2023-12-23 00:00:00",
+        "end_date": "2024-01-03 00:00:00",
+        "modified": "2022-08-06T13:18:21.000000Z",
+        "created": "2022-08-06T13:18:21.000000Z",
+        "id": 22
+    },
+    "message": "Blackout Updated"
+}
+```
+
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
